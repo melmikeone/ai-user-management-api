@@ -62,6 +62,74 @@ The AI-generated analysis was used as input for the architectural
 decision, but the final decision and ADR were reviewed and written
 by the developer.
 
+````markdown
+## Session 2 - TDD and Implementation
+
+### Objective
+
+Implement the User domain object according to the behaviour defined
+by the unit tests.
+
+### AI contribution
+
+The AI assistant was used to propose an initial implementation of
+the `User` domain object based on the tests.
+
+The prompt explicitly instructed the assistant not to modify the
+tests and to keep the implementation within the domain layer.
+
+The generated implementation was reviewed manually and executed
+against the test suite.
+
+### Developer validation
+
+The implementation was not accepted blindly.
+
+The developer reviewed:
+
+- validation logic;
+- exception handling;
+- code complexity;
+- adherence to the ADR;
+- test coverage.
+
+The complete test suite was executed using Maven.
+
+### Code review with AI
+
+The AI assistant was subsequently used as a Senior Java Developer
+to review the implementation.
+
+The review focused on:
+
+- separation of responsibilities;
+- edge cases;
+- null handling;
+- readability;
+- maintainability;
+- test quality.
+
+The recommendations were evaluated by the developer before making
+any changes.
+
+### TDD result
+
+The development followed the RED → GREEN cycle:
+
+```text
+RED
+Tests were created before the User implementation.
+
+GREEN
+The User implementation was created and the tests passed.
+
+REFACTOR
+The implementation was reviewed for simplicity and maintainability.
+````
+
+```
+```
+
 ---
 
 ## Development Tasks
