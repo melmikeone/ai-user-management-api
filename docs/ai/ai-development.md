@@ -130,6 +130,88 @@ The implementation was reviewed for simplicity and maintainability.
 ```
 ```
 
+### Session 3 - User creation service
+
+**Objective**
+
+Implement the application service responsible for creating users.
+
+**AI contribution**
+
+GitHub Copilot was used to propose the initial implementation
+of UserService based on the existing UserServiceTest and
+UserRepository abstraction.
+
+The AI was explicitly instructed not to modify the tests and
+not to introduce a database or controller.
+
+**Developer validation**
+
+The generated implementation was reviewed manually to verify:
+
+- dependency injection;
+- separation of responsibilities;
+- adherence to ADR-001;
+- correct use of UserRepository;
+- absence of unnecessary complexity;
+- test compatibility.
+
+The implementation was validated by running the complete Maven
+test suite.
+
+**Testing approach**
+
+Mockito was used to mock UserRepository and isolate UserService
+from persistence concerns.
+
+### Session 4 - AI Code Review
+
+**Objective**
+
+Review the complete email validation feature before creating
+the Pull Request.
+
+**AI contribution**
+
+GitHub Copilot was used as a Senior Java Developer to review
+the implementation.
+
+The review covered:
+
+- separation of responsibilities;
+- adherence to ADR-001;
+- code readability;
+- service and repository design;
+- Controller implementation;
+- HTTP error handling;
+- unit and integration tests;
+- Mockito usage;
+- edge cases;
+- maintainability.
+
+A second review focused specifically on robustness and
+unexpected input.
+
+**Developer validation**
+
+The AI recommendations were reviewed manually by the developer.
+
+Recommendations were not applied automatically. Each finding
+was evaluated according to:
+
+- relevance to the current feature;
+- architectural impact;
+- consistency with ADR-001;
+- complexity;
+- project scope.
+
+Only changes considered justified by the developer were applied.
+
+**Result**
+
+The complete Maven test suite was executed after the review
+and all tests passed.
+
 ---
 
 ## Development Tasks
@@ -149,13 +231,14 @@ The implementation was reviewed for simplicity and maintainability.
 
 To be completed after the feature has been implemented.
 
-| Activity | Without AI | With AI | Estimated saving |
-|---|---:|---:|---:|
-| Architecture | - | - | - |
-| Implementation | - | - | - |
-| Tests | - | - | - |
-| Code review | - | - | - |
-| Documentation | - | - | - |
+| Actividad              |  Sin IA | Con IA | Ahorro estimado |
+| ---------------------- | ------: | -----: | --------------: |
+| Diseño de arquitectura |  60 min | 25 min |          35 min |
+| Diseño de tests        |  45 min | 20 min |          25 min |
+| Implementación         | 120 min | 55 min |          65 min |
+| Code Review            |  45 min | 20 min |          25 min |
+| Documentación          |  45 min | 15 min |          30 min |
+
 
 ---
 
