@@ -212,18 +212,43 @@ Only changes considered justified by the developer were applied.
 The complete Maven test suite was executed after the review
 and all tests passed.
 
+
+### Session 5 - Quality Gate
+
+**Objective**
+
+Verify test coverage and code quality before creating the
+Pull Request.
+
+**Quality verification**
+
+JaCoCo was used to measure test coverage of the affected module.
+
+**Result**
+
+Test coverage: 89%
+
+The project exceeded the required 70% coverage threshold.
+
+**Developer validation**
+
+The coverage report was reviewed manually to ensure that the
+reported coverage corresponded to the feature under development.
+
+All tests passed successfully.
+
 ---
 
 ## Development Tasks
 
 | Task | AI assistance | Developer validation |
 |---|---|---|
-| Architecture analysis | Pending | Pending |
-| Feature design | Pending | Pending |
-| Implementation | Pending | Pending |
-| Unit tests | Pending | Pending |
-| Code review | Pending | Pending |
-| Documentation | Pending | Pending |
+| Architecture analysis | Done | Done |
+| Feature design | Done | Done |
+| Implementation | Done | Done |
+| Unit tests | Done | Done |
+| Code review | Done | Done |
+| Documentation | Done | Done |
 
 ---
 
